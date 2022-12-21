@@ -2,6 +2,7 @@
 package View;
 
 import Controle.LoginController;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 
@@ -90,6 +91,7 @@ public class Login extends javax.swing.JFrame {
 
     private void jButtonEntraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEntraActionPerformed
         Controle.fizTerefa();
+        
     }//GEN-LAST:event_jButtonEntraActionPerformed
 
    
@@ -115,4 +117,23 @@ public class Login extends javax.swing.JFrame {
     public void exiberMensagem(String mensagem) {
        JOptionPane.showMessageDialog(null ,mensagem);
     }
+
+    public JLabel getjLabelSenha() {
+        return jLabelSenha;
+    }
+
+    public void setjLabelSenha(JLabel jLabelSenha) {
+        this.jLabelSenha = jLabelSenha;
+    }
+
+    public JLabel getjLabelUsuario() {
+        return jLabelUsuario;
+    }
+
+    public void setjLabelUsuario(JLabel jLabelUsuario) {
+        this.jLabelUsuario = jLabelUsuario;
+    }
+
+    
+    
 }

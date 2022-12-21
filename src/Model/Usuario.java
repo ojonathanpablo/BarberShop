@@ -9,7 +9,7 @@ public class Usuario extends Pessoa {
     private String senha;
     private String nivelDeAcesso;
 
-    public Usuario(int id, String nome,String senha, String nivelDeAcesso, String sexo, String dataDeNascimento, String telefone, String RG) {
+    public Usuario(int id, String nome, char par1, String senha, String nivelDeAcesso, String sexo, String dataDeNascimento, String telefone, String RG) {
         super(id, nome, sexo, dataDeNascimento, telefone, RG);
         this.senha = senha;
         this.nivelDeAcesso = nivelDeAcesso;
@@ -20,6 +20,12 @@ public class Usuario extends Pessoa {
         this.senha = senha;
         this.nivelDeAcesso = nivelDeAcesso;
     }
+
+    public Usuario( int id,String nome, String senha) {
+        super(id, nome);
+        this.senha = senha;
+    }
+    
 
     public String getSenha() {
         return senha;
